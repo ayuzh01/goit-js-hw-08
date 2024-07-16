@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; 
+    padding: 24px; 
+  }
+  
+  .gallery-item {
+    margin: 0; 
+  }
+  
+  .gallery-image {
+    width: 360px;
+    height: 200px;
+    display: block;
+    object-fit: cover; 
+  }
+
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox__image {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
