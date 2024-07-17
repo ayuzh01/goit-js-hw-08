@@ -89,3 +89,9 @@ const images = [
       lightbox.style.display = 'none';
     }
   });
+
+  const instance = basicLightbox.create(`
+    <img src="assets/images/image.png" width="1112" height="640">
+`)
+
+instance.show()
